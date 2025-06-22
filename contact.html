@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Sinan KP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Ovo:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Ovo', serif;
+      background-color: #0d0d0d;
+      color: #f3f5f7;
+      line-height: 1.6;
+      padding: 60px 20px 100px;
+    }
+    a {
+      color: #b2b5b8;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    .contact-header {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .intro-text {
+      letter-spacing: 1px;
+      font-size: 30px;
+      font-family: 'Ovo', serif;
+    }
+    .intro-subtext {
+      display: block;
+      font-size: 30px;
+      color: #b2b5b8;
+      margin-top: 4px;
+    }
+    .contact-form-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .form-title {
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .form-input, .message-input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      background: #1a1a1a;
+      border: none;
+      color: #f3f5f7;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .form-input::placeholder,
+    .message-input::placeholder {
+      color: #b2b5b8;
+    }
+    .form-input:focus,
+    .message-input:focus {
+      outline: none;
+      background: #2a2a2a;
+    }
+    .form-row .form-input {
+      flex: 1;
+      min-width: 240px;
+    }
+    .message-input {
+      min-height: 160px;
+      resize: vertical;
+    }
+    .submit-button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #1a1a1a;
+      color: #f3f5f7;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .submit-button:hover {
+      background: #2a2a2a;
+    }
+    .social-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .social-title {
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .social-item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid #2a2a2a;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .social-item span {
+      font-family: 'Ovo', serif;
+      color: #b2b5b8;
+      font-size: 16px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .social-item img {
+      width: 16px;
+      transform: translate(0, 0);
+      transition: transform 0.3s ease;
+    }
+    .social-item::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 1px;
+      background: #f3f5f7;
+      transition: width 0.3s ease;
+    }
+    .social-item:hover span {
+      color: #f3f5f7;
+    }
+    .social-item:hover::after {
+      width: 100%;
+    }
+    .social-item:hover img {
+      transform: translate(4px, -4px) rotate(45deg);
+    }
+    .footer-navigation {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-family: 'Ovo', serif;
+      font-size: 14px;
+      color: #b2b5b8;
+      margin-top: 64px;
+    }
+    .footer-navigation a:hover,
+    .footer-navigation .nav-link-active {
+      color: #f3f5f7;
+    }
+
+
+
+      .fade-in-startup {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+
+
+</head>
+<body class="fade-in-startup">
+  <section class="contact-section">
+    <div class="contact-container">
+      <a href="javascript:void(0);" onclick="goBack()" class="back-link">&lt; Back</a>
+      <header class="contact-header">
+        <p class="intro-text">
+          I'm here to craft great digital experiences.
+          <span class="intro-subtext">Get in touch if you’ve got an idea in mind</span>
+        </p>
+      </header>
+
+      <div class="contact-form-section">
+        <h2 class="form-title">Let's chat</h2>
+        <form class="contact-form" action="https://formspree.io/f/xblyanzn" method="POST" >
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" class="form-input" required>
+            <input type="email" name="email" placeholder="Email" class="form-input" required>
+          </div>
+          <textarea name="message" placeholder="Message" class="message-input" required></textarea>
+          <button type="submit" class="submit-button">Send</button>
+        </form>
+      </div>
+
+      <nav class="social-section">
+        <h3 class="social-title">Follow me</h3>
+        <div class="social-links">
+          <a href="https://www.behance.net/fsbeats"><div class="social-item">
+            <span>Behance</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="arrow" />
+          </div></a>
+         <a href="https://www.instagram.com/si.__nan"><div class="social-item">
+            <span>Instagram</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="arrow" />
+          </div></a> 
+          <a href="https://www.linkedin.com/in/sinan-kp-06ba5b265"><div class="social-item">
+            <span>Linkedin</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="arrow" />
+          </div></a>
+          <a href="https://www.fiverr.com/sinan_kp"><div class="social-item">
+            <span>Fiverr</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="arrow" />
+          </div></a>
+        </div>
+      </nav>
+
+      <footer class="footer-navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html" class="nav-link-active">Contact</a>
+      </footer>
+    </div>
+  </section>
+</body>
+
+<script>
+  function goBack() {
+    if (document.referrer && document.referrer !== location.href) {
+      window.history.back();
+    } else {
+      window.location.href = "index.html"; // fallback if no referrer
+    }
+  }
+</script>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinan KP - About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ovo:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Ovo', -apple-system, Roboto, Helvetica, sans-serif;
+      background-color: rgba(16, 16, 16, 1);
+      color: #f3f5f7;
+      line-height: 1.6;
+      padding: 80px 20px;
+      padding-bottom: 124px;
+      font-weight: 400;
+    }
+
+    .about-section {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .back-link {
+      color: #b2b5b8;
+      text-decoration: none;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .about-heading {
+      color: #f3f5f7;
+      font-size: 30px;
+      letter-spacing: -0.32px;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+
+    .about-image {
+      width: 315px;
+      height: 387px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 48px auto;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #b2b5b8;
+      margin-bottom: 24px;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #323232;
+      border: none;
+      margin: 8px 0 32px;
+    }
+
+    .work-with-me h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      margin-bottom: 16px;
+      font-weight: 400;
+      color: #f3f5f7;
+    }
+
+    .work-with-me p {
+      font-size: 18px;
+      color: #f3f5f7;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .cta-button {
+      color: #b2b5b8;
+      align-self: start;
+      border-radius: 10px;
+      border: 1px solid var(--Border-Gray, #323232);
+      padding: 10px 24px;
+      gap: 10px;
+      font-size: 16px;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Ovo', -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .cta-button:hover {
+      color: #f3f5f7;
+      background-color: #1F1F1F;
+    }
+
+    .footer-navigation {
+      margin-top: 98px;
+      display: flex;
+      gap: 24px;
+      font-size: 16px;
+      color: #b2b5b8;
+      justify-content: center;
+    }
+
+    .footer-nav-link {
+      text-decoration: none;
+      color: #b2b5b8;
+      transition: color 0.3s ease;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link.active {
+      color: #f3f5f7;
+    }
+
+    @media (max-width: 991px) {
+      body {
+        padding: 40px 20px 100px;
+      }
+
+      .about-heading {
+        font-size: 24px;
+        text-align: left;
+      }
+
+      .about-image {
+        width: 90%;
+        height: auto;
+      }
+
+      .about-text p {
+        font-size: 16px;
+      }
+      
+      .cta-button {
+        padding: 10px 20px;
+    }
+
+      .work-with-me h2,
+      .work-with-me p {
+        text-align: left;
+      }
+    
+      
+      .footer-navigation {
+        margin-top: 60px;
+        white-space: initial;
+    }
+    }
+
+
+    .fade-in-startup {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  </style>
+
+
+</head>
+<body class="fade-in-startup">
+  <section id="about" class="about-section">
+    <a href="javascript:void(0);" onclick="goBack()" class="back-link">&lt; Back</a>
+
+    <h1 class="about-heading">
+      My name is Sinan. I am a UI/UX designer and creative technologist living in Kerala, India.
+    </h1>
+
+    <img src="IMG_8851~3.jpg" alt="Sinan KP" class="about-image" />
+
+    <div class="about-text">
+      <p>
+        My journey into tech began at the age of 18 when I taught myself to design and code websites with the goal of creating something better for myself.
+      </p>
+      <p>
+        What started as curiosity quickly grew into passion. I spent the following years sharpening my skills, first through client projects and then by exploring design systems, interfaces, and user experience more deeply.
+      </p>
+      <p>
+        With a Bachelor’s degree in Computer Applications (BCA), I bring together technical proficiency and design thinking to craft digital experiences that are both intuitive and visually compelling. My core strength lies in UI/UX design, from user research and wireframing to high-fidelity interfaces and interactive prototypes.
+      </p>
+      <p class="text-nomargin"> 
+        I design using tools like Figma and Photoshop, and build with code using HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I approach every project with a problem-solving mindset, breaking down complex ideas into simple, usable solutions that serve both user needs and business goals.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="work-with-me">
+      <h2>Work with me</h2>
+      <p>
+        If your company is looking for help with processes to support designers and developers, or with scaling a product or design, feel free to get in touch.
+      </p>
+      <a href="contact.html"><button class="cta-button">Get in touch</button></a>
+    </div>
+
+    <footer class="footer-navigation">
+      <a href="index.html" class="footer-nav-link">Home</a>
+      <a href="about.html" class="footer-nav-link active">About</a>
+      <a href="work.html" class="footer-nav-link">Work</a>
+      <a href="contact.html" class="footer-nav-link">Contact</a>
+    </footer>
+  </section>
+</body>
+
+<script>
+  function goBack() {
+    if (document.referrer && document.referrer !== location.href) {
+      window.history.back();
+    } else {
+      window.location.href = "index.html"; // fallback if no referrer
+    }
+  }
+</script>
+</html>
